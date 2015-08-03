@@ -6,13 +6,23 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
   <div class="container" ng-controller='EateryController'>
     <h1>Holy Shit I'm Hungry</h1>
-    <button class='btn btn-success' ng-click='getRandomRestaraunt()'>Tell Me What To Do</button>
+    <button class='btn btn-success' ng-click='getRandomRestaraunt()'>Tell Me What To Eat</button>
+    <div class="container">
+      <h2>{{ data.venue.name }}</h2>
+      <h3>{{ data.venue.hours.status }}</h3>
+      <h4>{{ data.tips[0].text }}</h4>
+    </div>
+    <div class="container">
+      <div id="map-canvas"></div>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
   <script src="eatery.js"></script>
 </body>
 </html>
