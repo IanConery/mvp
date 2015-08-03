@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+What Should I Eat?
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+Gives indecisive people a random restaraunt within one mile of there location.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+Have you ever felt lost and alone when it comes to the big decision of what do I eat? Well you are lost no more. What should I eat makes the hard decision for you. No longer do you have to waste precious time choosing a place to eat, you will simply be told what to do. Awesome right?
 
 ## Problem ##
-  > Describe the problem your product solves.
+I can't decide on where/what I want to eat.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+Makes the decision for you.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+"After finding myself asking the same question everyday at lunchtime, I decided that something needed to be done" -Ian Conery founder of "What should I eat"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+All you have to do is press the button.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+"I use to have a hard time choosing a place to eat, now all my problems are solved" - anonomyous.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+Try it out for yourself! Just go to localhost:8080 and press the only button on the page. 
