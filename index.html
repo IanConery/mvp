@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container" ng-controller='EateryController'>
-    <h1 class="jumbotron">Holy Shit I'm Hungry</h1>
+    <h1 class="jumbotron">Holy <strike>Shit</strike> Cow I'm Hungry</h1>
     <!-- <div class="container">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -23,6 +23,7 @@
     <br>
     <div class="container dynamic-color">
       <h2>{{ data.venue.name }}</h2>
+      <h4>{{ data.venue.categories[0].shortName }}</h4>
       <h3>{{ data.venue.hours.status }}</h3>
       <h4>{{ data.tips[0].text }}<h4>
       <div class="container" ng-controller='MapController' ng-show='available'>
