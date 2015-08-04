@@ -1,6 +1,4 @@
 var app = angular.module('eatery',[]);
-var lat = 0;
-var long = 0;
 app.controller('EateryController', function($scope, EateryFact){
   $scope.available = false;
   $scope.getRandomRestaraunt = function(){
@@ -13,7 +11,7 @@ app.controller('EateryController', function($scope, EateryFact){
 });
 
 
-app.controller('MapController', function($scope, EateryFact){
+app.controller('MapController', function($scope, EateryFact){//useless controller
 
 });
 
@@ -29,18 +27,25 @@ app.factory('EateryFact', function($http, $location){
       var respData = resp.data.response.groups[0].items;
       var rando = respData[Math.floor(Math.random() * respData.length)]
       console.log('here is the response', rando)
-      return rando;
+      console.log(respData);
+      return rando;// returns one location from an array of locations
     });
   };
-  var mapFunc = function(lat, long){
+  var mapFunc = function(lat, long){//this builds the map
+    var image = 'images/small.png';
     var mapOptions = {
-      zoom: 16,
+      zoom: 15,
       center: new google.maps.LatLng(lat, long),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     this.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    this.marker = new google.maps.Marker({
+    this.marker = new google.maps.Marker({// restaraunt location
       position: new google.maps.LatLng(lat,long),
+      map: this.map,
+      icon: image
+    });
+    this.marker = new google.maps.Marker({// users location
+      position: new google.maps.LatLng(37.783724,-122.408978),
       map: this.map
     });
     var infoWindow = new google.maps.InfoWindow();

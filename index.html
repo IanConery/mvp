@@ -10,6 +10,12 @@
 <body>
   <div class="container" ng-controller='EateryController'>
     <h1 class="jumbotron">Holy Shit I'm Hungry</h1>
+    <!-- <div class="container">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Where are you?">
+      </div>
+    </div> -->
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <button type="button" class='btn btn-primary btn-block' ng-click='getRandomRestaraunt()'>Tell Me What To Eat</button>
@@ -20,8 +26,10 @@
       <h3>{{ data.venue.hours.status }}</h3>
       <h4>{{ data.tips[0].text }}<h4>
       <div class="container" ng-controller='MapController' ng-show='available'>
+        <h4>Rating {{ data.venue.rating }}</h4>
+        <h4>Price {{ data.venue.price.message }}</h4>
         <h4>{{ data.venue.location.address }} {{ data.venue.location.city }}</h4>
-        <h4>Feet from your location {{ data.venue.location.distance * 3}}</h4>
+        <h4>Walking time: {{ data.venue.location.distance * 0.000621371 / 2 * 60}} minutes.</h4>
         <div id="map-canvas"></div>
       </div>
     </div>
