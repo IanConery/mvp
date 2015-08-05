@@ -23,13 +23,13 @@ What Should I Eat?
 Gives indecisive people a random restaraunt within one mile of there location.
 
 ## Summary ##
-Have you ever felt lost and alone when it comes to the big decision of what do I eat? Well you are lost no more. What should I eat makes the hard decision for you. No longer do you have to waste precious time choosing a place to eat, you will simply be told what to do. Awesome right?
+Have you ever felt lost and alone when it comes to the big decision of what do I eat? Well you are lost no more. What should I eat makes the hard decisions for you. No longer do you have to waste precious time choosing a place to eat, you will simply be told what to do. Awesome right?
 
 ## Problem ##
 I can't decide on where/what I want to eat.
 
 ## Solution ##
-Makes the decision for you.
+What should I eat, makes that choice for you.
 
 ## Quote from You ##
 "After finding myself asking the same question everyday at lunchtime, I decided that something needed to be done" -Ian Conery founder of "What should I eat"
@@ -38,7 +38,7 @@ Makes the decision for you.
 All you have to do is press the button.
 
 ## Customer Quote ##
-"I use to have a hard time choosing a place to eat, now all my problems are solved" - anonomyous.
+"I used to have a hard time choosing a place to eat, now all my problems are solved" - anonomyous.
 
 ## Closing and Call to Action ##
-Try it out for yourself! Just go to localhost:8080 and press the only button on the page. 
+Try it out for yourself! 
